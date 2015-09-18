@@ -1,23 +1,27 @@
-<label>What's Your Console of Choice?</label>
+<label>Escoje las llantas de tu bicicleta</label>
 <div class="form-group">
     <div class="radio">
         <label>
-           <input type="radio" ng-model="formData.type" value="xbox" checked>
-           I like XBOX
+           <input type="radio" ng-model="formData.llantas" value="Monta&ntilde;a" checked>
+           Monta&ntilde;a
         </label>
     </div>
     <div class="radio">
         <label>
-            <input type="radio" ng-model="formData.type" value="ps">
-            I like PS4
+            <input type="radio" ng-model="formData.llantas" value="Ruta">
+            Ruta
         </label>
     </div>
 </div>
 
 <div class="form-group row">
-<div class="col-xs-6 col-xs-offset-3">
+<div class="col-xs-3">
+    <a ui-sref="form.step1" class="btn btn-block btn-info">
+    Anterior <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    </a>
+</div><div class="col-xs-3 col-xs-offset-6">
     <a ui-sref="form.step3" class="btn btn-block btn-info">
-    Next Section <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    Siguiente <span class="glyphicon glyphicon-circle-arrow-right"></span>
     </a>
 </div>
 </div>
