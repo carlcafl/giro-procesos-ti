@@ -1,29 +1,72 @@
-<label>Escoje el cuadro de tu bicicleta</label>
-<div class="form-group">
-    <div class="radio">
-        <label>
-           <input type="radio" ng-model="formData.cuadro" value="Hierro" checked>
-           Hierro
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" ng-model="formData.cuadro" value="Aluminio">
-            Aluminio
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" ng-model="formData.cuadro" value="Plegable">
-            Plegable
-        </label>
-    </div>
-</div>
+<label>Escoje el marco de tu bicicleta</label>
 
-<div class="form-group row">
-<div class="col-xs-6 col-xs-offset-3">
-    <a ui-sref="form.step2" class="btn btn-block btn-info">
-    Siguiente <span class="glyphicon glyphicon-circle-arrow-right"></span>
-    </a>
+<div class="form-group">
+	<table>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label><input type="radio" ng-model="formData.marco"
+						value="Hierro"> <img src="../assets/img/marcoHierro.jpg"
+						height="128" alt="">Hierro </label>
+				</div>
+			</td>
+			<td class="col-xs-6">Esta es la descripción del marco de hierro.
+				Lorem ipsum dolor sit amet, sem ut fusce fringilla perspiciatis,
+				pede in etiam. Non neque ullamcorper nulla convallis ut,
+				pellentesque in eros, id in auctor semper ultrices vehicula. Lacinia
+				suspendisse, sit quam hac integer libero odio, magna et, amet pede
+				libero, iaculis at congue congue massa. Suspendisse deleniti eget
+				nunc fames lectus dictum, et lectus diam lacus sed. Risus vitae, eu
+				integer, gravida arcu tortor elit pede pede. Fames proin ac, aenean
+				nunc suspendisse nibh ultrices, sed risus.
+		</tr>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label> <input type="radio" ng-model="formData.marco"
+						value="Aluminio"> <img
+						src="../assets/img/marcoAluminio.jpg" height="128" alt="">
+						Aluminio
+					</label>
+				</div>
+			</td>
+			<td class="col-xs-6">Esta es la descripción del marco de
+				aluminio. Lorem ipsum dolor sit amet, sem ut fusce fringilla
+				perspiciatis, pede in etiam. Non neque ullamcorper nulla convallis
+				ut, pellentesque in eros, id in auctor semper ultrices vehicula.
+				Lacinia suspendisse, sit quam hac integer libero odio, magna et,
+				amet pede libero, iaculis at congue congue massa. Suspendisse
+				deleniti eget nunc fames lectus dictum, et lectus diam lacus sed.
+				Risus vitae, eu integer, gravida arcu tortor elit pede pede. Fames
+				proin ac, aenean nunc suspendisse nibh ultrices, sed risus.</td>
+		</tr>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label> <input type="radio" ng-model="formData.marco"
+						value="Plegable"> <img
+						src="../assets/img/marcoPlegable.jpg" height="128" alt="">
+						Plegable
+					</label>
+			</td>
+			<td class="col-xs-6">Esta es la descripción del marco plegable.
+				Lorem ipsum dolor sit amet, sem ut fusce fringilla perspiciatis,
+				pede in etiam. Non neque ullamcorper nulla convallis ut,
+				pellentesque in eros, id in auctor semper ultrices vehicula. Lacinia
+				suspendisse, sit quam hac integer libero odio, magna et, amet pede
+				libero, iaculis at congue congue massa. Suspendisse deleniti eget
+				nunc fames lectus dictum, et lectus diam lacus sed. Risus vitae, eu
+				integer, gravida arcu tortor elit pede pede. Fames proin ac, aenean
+				nunc suspendisse nibh ultrices, sed risus.</td>
+			</div>
+			</td>
+		</tr>
+	</table>
 </div>
+<div class="form-group row">
+	<div class="col-xs-6 col-xs-offset-3">
+		<a ui-sref="form.step2" class="btn btn-block btn-info"> Siguiente
+			<span class="glyphicon glyphicon-circle-arrow-right"></span>
+		</a>
+	</div>
 </div>

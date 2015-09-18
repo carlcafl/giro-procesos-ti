@@ -37,6 +37,12 @@ angular.module('giroApp', ['ngAnimate', 'ui.router'])
         .state('form.step3', {
             url: '/step3',
             templateUrl: 'step3.html'
+        })
+
+        // url will be /form/step4
+        .state('form.step4', {
+            url: '/step4',
+            templateUrl: 'step4.html'
         });
        
     // catch all route

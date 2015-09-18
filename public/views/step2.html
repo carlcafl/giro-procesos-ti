@@ -1,18 +1,46 @@
 <label>Escoje las llantas de tu bicicleta</label>
 <div class="form-group">
-    <div class="radio">
-        <label>
-           <input type="radio" ng-model="formData.llantas" value="Monta&ntilde;a" checked>
-           Monta&ntilde;a
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" ng-model="formData.llantas" value="Ruta">
-            Ruta
-        </label>
-    </div>
+	<table>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label><input type="radio" ng-model="formData.llantas"
+						value="Monta&ntilde;a"> <img src="../assets/img/llantasMontania.jpg"
+						height="128" alt="">Monta&ntilde;a </label>
+				</div>
+			</td>
+			<td class="col-xs-6">Esta es la descripción de las llantas de montaña.
+				Lorem ipsum dolor sit amet, sem ut fusce fringilla perspiciatis,
+				pede in etiam. Non neque ullamcorper nulla convallis ut,
+				pellentesque in eros, id in auctor semper ultrices vehicula. Lacinia
+				suspendisse, sit quam hac integer libero odio, magna et, amet pede
+				libero, iaculis at congue congue massa. Suspendisse deleniti eget
+				nunc fames lectus dictum, et lectus diam lacus sed. Risus vitae, eu
+				integer, gravida arcu tortor elit pede pede. Fames proin ac, aenean
+				nunc suspendisse nibh ultrices, sed risus.
+		</tr>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label> <input type="radio" ng-model="formData.llantas"
+						value="Ruta"> <img
+						src="../assets/img/llantasRuta.jpg" height="128" alt="">
+						Ruta
+					</label>
+				</div>
+			</td>
+			<td class="col-xs-6">Esta es la descripción de las llantas de ruta. Lorem ipsum dolor sit amet, sem ut fusce fringilla
+				perspiciatis, pede in etiam. Non neque ullamcorper nulla convallis
+				ut, pellentesque in eros, id in auctor semper ultrices vehicula.
+				Lacinia suspendisse, sit quam hac integer libero odio, magna et,
+				amet pede libero, iaculis at congue congue massa. Suspendisse
+				deleniti eget nunc fames lectus dictum, et lectus diam lacus sed.
+				Risus vitae, eu integer, gravida arcu tortor elit pede pede. Fames
+				proin ac, aenean nunc suspendisse nibh ultrices, sed risus.</td>
+		</tr>
+	</table>
 </div>
+
 
 <div class="form-group row">
 <div class="col-xs-3">

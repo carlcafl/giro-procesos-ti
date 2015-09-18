@@ -1,6 +1,74 @@
-<div class="text-center">
-    <span class="glyphicon glyphicon-heart"></span>
-    <h3>Gracias por participar!</h3>
-    
-    <button type="submit" class="btn btn-danger">Submit</button>
+<label>Escoje el sistema de cambios (platos y pi&ntilde;ones)</label>
+<div class="form-group">
+	<table>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label><input type="radio" ng-model="formData.cambios"
+						value="Sin cambios"> <img src="../assets/img/platosSinCambios.jpg"
+						height="128" alt="">Un plato y pi&ntilde;&oacute;n (Sin cambios) </label>
+				</div>
+			</td>
+			<td class="col-xs-6">
+				Lorem ipsum dolor sit amet, sem ut fusce fringilla perspiciatis,
+				pede in etiam. Non neque ullamcorper nulla convallis ut,
+				pellentesque in eros, id in auctor semper ultrices vehicula. Lacinia
+				suspendisse, sit quam hac integer libero odio, magna et, amet pede
+				libero, iaculis at congue congue massa. Suspendisse deleniti eget
+				nunc fames lectus dictum, et lectus diam lacus sed. Risus vitae, eu
+				integer, gravida arcu tortor elit pede pede. Fames proin ac, aenean
+				nunc suspendisse nibh ultrices, sed risus.
+		</tr>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label> <input type="radio" ng-model="formData.cambios"
+						value="18 cambios"> <img
+						src="../assets/img/platos18Cambios.jpg" height="128" alt="">
+						3 platos y 6 pi&ntilde;ones (18 cambios)
+					</label>
+				</div>
+			</td>
+			<td class="col-xs-6">Lorem ipsum dolor sit amet, sem ut fusce fringilla
+				perspiciatis, pede in etiam. Non neque ullamcorper nulla convallis
+				ut, pellentesque in eros, id in auctor semper ultrices vehicula.
+				Lacinia suspendisse, sit quam hac integer libero odio, magna et,
+				amet pede libero, iaculis at congue congue massa. Suspendisse
+				deleniti eget nunc fames lectus dictum, et lectus diam lacus sed.
+				Risus vitae, eu integer, gravida arcu tortor elit pede pede. Fames
+				proin ac, aenean nunc suspendisse nibh ultrices, sed risus.</td>
+		</tr>
+		<tr>
+			<td class="col-xs-6">
+				<div class="radio">
+					<label> <input type="radio" ng-model="formData.cambios"
+						value="21 cambios"> <img
+						src="../assets/img/platos21Cambios.jpg" height="128" alt="">
+						3 platos y 7 pi&ntilde;ones (21 cambios)
+					</label>
+				</div>
+			</td>
+			<td class="col-xs-6">Lorem ipsum dolor sit amet, sem ut fusce fringilla
+				perspiciatis, pede in etiam. Non neque ullamcorper nulla convallis
+				ut, pellentesque in eros, id in auctor semper ultrices vehicula.
+				Lacinia suspendisse, sit quam hac integer libero odio, magna et,
+				amet pede libero, iaculis at congue congue massa. Suspendisse
+				deleniti eget nunc fames lectus dictum, et lectus diam lacus sed.
+				Risus vitae, eu integer, gravida arcu tortor elit pede pede. Fames
+				proin ac, aenean nunc suspendisse nibh ultrices, sed risus.</td>
+		</tr>
+			</table>
+</div>
+
+
+<div class="form-group row">
+<div class="col-xs-3">
+    <a ui-sref="form.step2" class="btn btn-block btn-info">
+    Anterior <span class="glyphicon glyphicon-circle-arrow-left"></span>
+    </a>
+</div><div class="col-xs-3 col-xs-offset-6">
+    <a ui-sref="form.step4" class="btn btn-block btn-info">
+    Siguiente <span class="glyphicon glyphicon-circle-arrow-right"></span>
+    </a>
+</div>
 </div>
