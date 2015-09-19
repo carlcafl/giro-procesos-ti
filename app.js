@@ -24,7 +24,7 @@ app.post('/submit/:mail', function(req,res) {
  //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
  var mailgun = new Mailgun({apiKey: api_key, domain: domain});
  
- var mailContent = 'Querido ' + req.body.nombreParticipante + ',<br/>';
+ var mailContent = 'Querido ' + req.body.nombreParticipante + ',<br/><br/>';
  mailContent += 'Muchas gracias por participar en esta etapa del GIRO DE PROCESOS. ';
  mailContent += 'A continuaci&oacute;n encontrar&aacute;s el resultado de tu ejercicio:<br/><br/>';
  mailContent += '- Proceso: ' + req.body.proceso + '<br/>';
