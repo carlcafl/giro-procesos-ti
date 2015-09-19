@@ -24,7 +24,7 @@ app.post('/submit/:mail', function(req,res) {
  //We pass the api_key and domain to the wrapper, or it won't be able to identify + send emails
  var mailgun = new Mailgun({apiKey: api_key, domain: domain});
  
- var mailContent = 'Querido ' + req.body.nombreParticipante + ',<br/><br/>';
+ var mailContent = '<font face="Verdana">Querido ' + req.body.nombreParticipante + ',<br/><br/>';
  mailContent += 'Muchas gracias por participar en esta etapa del GIRO DE PROCESOS. ';
  mailContent += 'A continuaci&oacute;n encontrar&aacute;s el resultado de tu ejercicio:<br/><br/>';
  mailContent += '- Proceso: ' + req.body.proceso + '<br/>';
@@ -37,7 +37,7 @@ app.post('/submit/:mail', function(req,res) {
  mailContent += '- Kit de ruta: ' + req.body.kitRuta + '<br/>';
  mailContent += '<br/>De parte del equipo de TI te agradecemos, y esperamos que nos contactes para acompa&ntilde;arte en tu carrera!<br/><br/><br/>';
  mailContent += 'Cordial saludo,<br/><br/><br/>';
- mailContent += 'Equipo Facilitador TI - GIRO DE PROCESOS';
+ mailContent += '<b>Equipo Facilitador TI - GIRO DE PROCESOS</b></font>';
  
  var data = {
  //Specify email data
