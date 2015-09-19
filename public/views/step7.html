@@ -1,13 +1,13 @@
-<span class="col-xs-12" align="center"><h4>Selecciona el sistema de cambios (platos y pi&ntilde;ones)</h4></span>
+<span class="col-xs-12" align="center"><h4>Selecciona el kit de ruta (GPS)</h4></span>
 
 <div class="form-group">
 	<table>
 		<tr>
 			<td class="col-xs-6">
 				<div class="radio">
-					<label><input type="radio" ng-model="formData.cambios"
-						value="Sin cambios"> <img src="../assets/img/platosSinCambios.jpg"
-						height="128" alt="">Un plato y pi&ntilde;&oacute;n (Sin cambios) </label>
+					<label><input type="radio" ng-model="formData.kitRuta"
+						value="Cuenta kil&oacute;metros"> <img src="../assets/img/gpsBasico.jpg"
+						height="128" alt="">Cuenta kil&oacute;metros</label>
 				</div>
 			</td>
 			<td class="col-xs-6">
@@ -23,10 +23,10 @@
 		<tr>
 			<td class="col-xs-6">
 				<div class="radio">
-					<label> <input type="radio" ng-model="formData.cambios"
-						value="18 cambios"> <img
-						src="../assets/img/platos18Cambios.jpg" height="128" alt="">
-						3 platos y 6 pi&ntilde;ones (18 cambios)
+					<label> <input type="radio" ng-model="formData.kitRuta"
+						value="GPS b&aacute;sico"> <img
+						src="../assets/img/gpsIntermedio.jpg" height="128" alt="">
+						GPS b&aacute;sico
 					</label>
 				</div>
 			</td>
@@ -42,10 +42,10 @@
 		<tr>
 			<td class="col-xs-6">
 				<div class="radio">
-					<label> <input type="radio" ng-model="formData.cambios"
-						value="21 cambios"> <img
-						src="../assets/img/platos21Cambios.jpg" height="128" alt="">
-						3 platos y 7 pi&ntilde;ones (21 cambios)
+					<label> <input type="radio" ng-model="formData.kitRuta"
+						value="GPS con mapa y proyecci&oacute;n"> <img
+						src="../assets/img/gpsAvanzado.jpg" height="128" alt="">
+						GPS con mapa y proyecci&oacute;n
 					</label>
 				</div>
 			</td>
@@ -64,11 +64,11 @@
 
 <div class="form-group row">
 <div class="col-xs-3">
-    <a ui-sref="form.step2" class="btn btn-block btn-info">
+    <a ui-sref="form.step6" class="btn btn-block btn-info">
     Anterior <span class="glyphicon glyphicon-circle-arrow-left"></span>
     </a>
 </div><div class="col-xs-3 col-xs-offset-6">
-    <a ui-sref="form.step4" class="btn btn-block btn-info">
+    <a ui-sref="form.step8" class="btn btn-block btn-info">
     Siguiente <span class="glyphicon glyphicon-circle-arrow-right"></span>
     </a>
 </div>

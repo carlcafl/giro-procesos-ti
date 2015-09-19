@@ -1,0 +1,9 @@
+/* numbered buttons */
+#status-buttons                 {  }
+#status-buttons a               { color:#4e4e5a; display:inline-block; font-size:12px; margin-right:10px; text-align:center; text-transform:uppercase; }
+#status-buttons a:hover         { text-decoration:none; }
+#status-buttons span            { background:#00b9e3; display:block; height:30px; margin:0 auto 10px; padding-top:5px; width:30px; 
+    border-radius:50%; }
+
+/* active buttons */
+#status-buttons a.active span   { background:#ff9000; }

@@ -1,0 +1,91 @@
+<div class="text-center">
+	<h4>Gracias por participar!</h4>
+	<h5>Esperamos que hayas disfrutado el ejercicio. Llena tus datos y te enviaremos por correo el resultado del ejercicio. </h5>
+<div class="form-group">
+    <label for="name">Nombre</label>
+    <input type="text" class="form-control" name="name" ng-model="formData.nombreParticipante">
+</div>
+
+<div class="form-group">
+    <label for="email">Proceso</label> 
+    <select name="proceso" class="form-control" ng-model="formData.proceso">
+   <option value="Ninguno">-- Seleccione uno --</option>
+<option value="Asistencia - Dise&ntilde;o de servicios asistenciales">Asistencia - Dise&ntilde;o de servicios asistenciales</option>
+<option value="Asistencia - Dise&ntilde;o de servicios profesionales">Asistencia - Dise&ntilde;o de servicios profesionales</option>
+<option value="Asistencia - Dise&ntilde;o y desarrollo de modelos de atenci&oacute;n">Asistencia - Dise&ntilde;o y desarrollo de modelos de atenci&oacute;n</option>
+<option value="Asistencia - Evaluaci&oacute;n del Servicio">Asistencia - Evaluaci&oacute;n del Servicio</option>
+<option value="Asistencia - Gesti&oacute;n de Casos">Asistencia - Gesti&oacute;n de Casos</option>
+<option value="Asistencia - Gesti&oacute;n de Pagos">Asistencia - Gesti&oacute;n de Pagos</option>
+<option value="Asistencia - Gesti&oacute;n Integral de Prestadores">Asistencia - Gesti&oacute;n Integral de Prestadores</option>
+<option value="Asistencia - Modelos de contacto">Asistencia - Modelos de contacto</option>
+<option value="Asistencia - Modelos de operaci&oacute;n">Asistencia - Modelos de operaci&oacute;n</option>
+<option value="Asistencia - Planeaci&oacute;n de modelos">Asistencia - Planeaci&oacute;n de modelos</option>
+<option value="Asistencia - Prestaci&oacute;n del Servicio">Asistencia - Prestaci&oacute;n del Servicio</option>
+<option value="BIEN Humano - Salud Integral">BIEN Humano - Salud Integral</option>
+<option value="Consultor&iacute;a - Auditor&iacute;a del Proceso">Consultor&iacute;a - Auditor&iacute;a del Proceso</option>
+<option value="Consultor&iacute;a - Prestaci&oacute;n del Servicio">Consultor&iacute;a - Prestaci&oacute;n del Servicio</option>
+<option value="Consultor&iacute;a - Venta de Soluciones">Consultor&iacute;a - Venta de Soluciones</option>
+<option value="Impuestos - Activos">Impuestos - Activos</option>
+<option value="Log&iacute;stica - Movilidad">Log&iacute;stica - Movilidad</option>
+<option value="Planeaci&oacute;n Financiera - Adm&oacute;n de Sistemas de Informaci&oacute;n Financiera">Planeaci&oacute;n Financiera - Adm&oacute;n de Sistemas de Informaci&oacute;n Financiera</option>
+<option value="Planeaci&oacute;n Financiera - Dise&ntilde;o de Opciones Estrat&eacute;gicas">Planeaci&oacute;n Financiera - Dise&ntilde;o de Opciones Estrat&eacute;gicas</option>
+<option value="Planeaci&oacute;n Financiera - Evaluaci&oacute;n Financiera">Planeaci&oacute;n Financiera - Evaluaci&oacute;n Financiera</option>
+<option value="Planeaci&oacute;n Financiera - Gesti&oacute;n de Costos">Planeaci&oacute;n Financiera - Gesti&oacute;n de Costos</option>
+<option value="Planeaci&oacute;n Financiera - Gesti&oacute;n de Presupuesto">Planeaci&oacute;n Financiera - Gesti&oacute;n de Presupuesto</option>
+<option value="Planeaci&oacute;n Financiera - Proyecciones Financieras">Planeaci&oacute;n Financiera - Proyecciones Financieras</option>
+<option value="Salud - Facturaci&oacute;n">Salud - Facturaci&oacute;n</option>
+<option value="Salud - Implementaci&oacute;n de la red">Salud - Implementaci&oacute;n de la red</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="text" class="form-control" name="email" ng-model="formData.email">
+</div>
+			
+
+
+	<button type="submit" class="btn btn-danger">Enviar</button>
+</div>
+<div class="col-xs-12 text-center">
+	<table border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr>
+			<td>&nbsp;</td>
+			<td>Manillar y sill&iacute;n {{formData.manillar}}</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="4" rowspan="4"><img src="../assets/img/bycicle.jpg"
+				height="200" /></td>
+		</tr>
+		<tr>
+			<td>Marco {{formData.marco}}</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Llantas {{formData.llantas}}</td>
+		</tr>
+		<tr>
+			<td>{{formData.cambios}}</td>
+			<td>Pedales {{formData.pedales}}</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td colspan="5">
+		<img src="../assets/img/kit.png" height="100"/>
+	<img src="../assets/img/helmet.png" height="100"/>
+		</td>
+		</tr>
+		<tr>
+		<td colspan="5">
+		{{formData.kitRuta}} - {{formData.casco}}
+		</td>
+		</tr>
+	</table>
+	
+</div>
