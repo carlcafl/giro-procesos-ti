@@ -21,6 +21,11 @@ angular.module('giroApp', ['ngAnimate', 'ui.router'])
         
         // nested states 
         // each of these sections will have their own view
+        // url will be nested (/form/step0)
+        .state('form.step0', {
+            url: '/step0',
+            templateUrl: 'step0.html'
+        })
         // url will be nested (/form/step1)
         .state('form.step1', {
             url: '/step1',
@@ -71,7 +76,7 @@ angular.module('giroApp', ['ngAnimate', 'ui.router'])
        
     // catch all route
     // send users to the form page 
-    $urlRouterProvider.otherwise('/form/step1');
+    $urlRouterProvider.otherwise('/form/step0');
 })
 
 // our controller for the form

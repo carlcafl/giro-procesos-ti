@@ -10,7 +10,7 @@ var api_key = 'key-3f370e0cdfd6085cfc503fb19184dbb3';
 var domain = 'sandbox751b4754081240219e5694ee2e97d046.mailgun.org';
 
 //Your sending email address
-var from_who = 'ccarmona@gmail.com';
+var from_who = 'giroprocesosti@gmail.com';
 
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
