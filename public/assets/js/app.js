@@ -1,4 +1,5 @@
 //var backendURL = "https://sura-resource-alloc-backend.herokuapp.com/api/rest";
+var doDisable = false;
 
 
 
@@ -88,12 +89,15 @@ angular.module('giroApp', ['ngAnimate', 'ui.router'])
     
     // function to process the form
     $scope.processForm = function() {
+    	doDisable = true;
         var res = $http.post('/submit/' + $scope.formData.email,$scope.formData);
 		res.success(function(data, status, headers, config) {			
-	        alert('El resultado ha sido enviado satisfactoriamente a tu correo.\nMuchas gracias por participar'); 
+	        alert('El resultado ha sido enviado satisfactoriamente a tu correo.\nMuchas gracias por participar');
+	        doDisable = false;
 		});
 		res.error(function(data, status, headers, config) {			
 	        alert('Ha ocurrido un error... Por favor intenta nuevamente'); 
+	        doDisable = false;
 		});
     };
     
